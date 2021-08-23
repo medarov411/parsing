@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/7847d9d207.js" crossorigin="anonymous"></script>
+    <title>ODDSCP</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__logo"><img src="images/first-block/logo.png" alt=""></div>
+            <div class="header__list">
+                <ul>
+                    <li><a href="">Стоимость</a></li>
+                    <li><a href="">Live DEMO</a></li>
+                    <li><a href="">Документация</a></li>
+                    <li><a href="">Вопросы</a></li>
+                </ul>
+            </div>
+
+
+            <div class="header__lang">
+                <div class="header__russian"><p>Русский ▼</p></div>
+                <div class="header__english"><p>English</p></div>
+            </div>
+            <div class="header__user">
+                <i class="far fa-user"></i>
+                <p>Войти</p>
+            </div>
+        </div>
+        <div class="header__line"></div>
+
+        <div class="menu__mobile">
+            <div class="mobile__btn">
+                <span class="span__rotate_1 burger__element"></span>
+                <span class="span__rotate_2 burger__element"></span>
+                <span class="span__hide burger__element"></span>
+            </div>
+            
+            <div class="mobile__logo"><img src="images/first-block/logo.png" alt=""></div>
+
+            <div class="mobile__wrapper">
+                <div class="mobile__user">
+                    <i class="far fa-user"></i>
+                    <p>Войти</p>
+                </div>
+                <div class="mobile__list">
+                    <ul>
+                        <li><a href="">Стоимость</a></li>
+                        <li><a href="">Live DEMO</a></li>
+                        <li><a href="">Документация</a></li>
+                        <li><a href="">Вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="mobile__lang">
+                    <div class="header__russian"><p>Русский ▼</p></div>
+                    <div class="header__english"><p>English</p></div>
+                </div>
+            </div>
+         
+        </div>
+    </header>
+    <div class="mobile__hide_bg"></div>
+    <section class="api">
+        <div class="container">
+            <div class="api__content">
+                <div class="api__info info">
+                    <h1>API для парсинга спортивных событий</h1>
+                    <h3>Live и вилки</h3>
+                    <p class="api__about">Предоставляем данные для автоматизации ставок. 95% событий получаем менее, чем за 1 секуду.Сервис создавался для себя и круга знакомых. При достижении 500 клиентов сервис будет закрыт для продажи, для исключения конкуренции и внимания со стороны БК</p>
+                    <div class="info__btn">
+                        <button><span>Регистрация</span></button>
+                        <div class="info__text">
+                            <span>123/<span style="color: #656667;">500</span></span>
+                            <p>Активных клиентов</p>
+                        </div>
+                    </div>
+                    <p class="info__warning">*Продажа API ключа будет прекращена</p>
+                </div>
+                <div class="api__image"><img class="soccer-image" data-speed="-5" src="images/second-block/soocer.png" alt="football"></div>
+                <script type="text/javascript">
+                    document.addEventListener("mousemove", parallax);
+                    function parallax(e) {
+                            const img = document.querySelector('.soccer-image')
+                            const speed = img.getAttribute('data-speed')
+
+                            const x = (window.innerWidth - e.pageX*speed)/100
+                            const y = (window.innerHeight - e.pageY*speed)/100
+
+                            img.style.transform = 'translateX(${x}px) translateY(${y}px)'
+                      
+                    }
+                </script>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class="facts">
+        <div class="container">
+            <div class="facts__content">
+                <div class="facts__col_1">
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/1.png" alt=""></div>
+                        <h1 class="facts__title">0,4 секунды</h1>
+                        <p class="facts__info">Среднее время обновления данных. 95% данных не превышают 1 секунды</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card" style="box-shadow: 0 0 5px #fc8b2b, 0 0 10px #fc8b2b, 0 0 50px #fc8b2b;">
+                        <div class="facts__image"><h1>138 280</h1></div>
+                        <h2 class="facts__title">Cобытий</h2>
+                        <p class="facts__info">Было проанализированно сервисом ODDSCP за последний месяц</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/2.png" alt=""></div>
+                        <h1 class="facts__title">Оптимизация задержки</h1>
+                        <p class="facts__info">Постоянно замеряем время задержки парсинга</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/3.png" alt=""></div>
+                        <h1 class="facts__title">1 месяц TRIAL
+                        </h1>
+                        <p class="facts__info">Этого достаточно для внедрения бота</p>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="facts__col_2">
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/4.png" alt=""></div>
+                        <h1 class="facts__title">2,5 года</h1>
+                        <p class="facts__info">Занимаемся автоматизированными ставками и их оптимизацией</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/5.png" alt=""></div>
+                        <h2 class="facts__title">Собственная технология</h2>
+                        <p class="facts__info">Для замера и оптимизации времени парсинга</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/6.png" alt=""></div>
+                        <h1 class="facts__title">Онлайн проверка</h1>
+                        <p class="facts__info">Проверьте корректность парсинга данных от букмкерских контор онлайн без регистрации</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/7.png" alt=""></div>
+                        <h1 class="facts__title">96% событий</h1>
+                        <p class="facts__info">Охватываем около 96% спортивных событий, по которым совершаются ставки</p>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="facts__col_3">
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/2.png" alt=""></div>
+                        <h1 class="facts__title">Оптимизация задержки</h1>
+                        <p class="facts__info">Постоянно замеряем время задержки парсинга</p>
+                        <span class="arrow">→</span>
+                    </div>
+                
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/6.png" alt=""></div>
+                        <h1 class="facts__title">Онлайн проверка</h1>
+                        <p class="facts__info">Проверьте корректность парсинга данных от букмкерских контор онлайн без регистрации</p>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                <div class="facts__col_4">
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/3.png" alt=""></div>
+                        <h1 class="facts__title">1 месяц TRIAL
+                        </h1>
+                        <p class="facts__info">Этого достаточно для внедрения бота</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="facts__card">
+                        <div class="facts__image"><img src="images/third-block/7.png" alt=""></div>
+                        <h1 class="facts__title">96% событий</h1>
+                        <p class="facts__info">Охватываем около 96% спортивных событий, по которым совершаются ставки</p>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__window">
+                <div class="modal__content">
+                    <div class="modal__title"><h1>138 280</h1><i class="far fa-times-circle for-close" style="cursor: pointer;"></i></div>
+                    <div class="modal__undertitle"><h3>Событый ежемесячно анализируется сервисом</h3></div>
+                    <div class="modal__info"><p>На данный момент парсер ODDSCP подключен к 10 БК России и других стран. Постоянно ведется работа по добавлению новых БК. Мы прислушиваемся к мнению наших клиентов. Вы можете выбрать, какую БК хотели бы видеть, или предложить свою.</p></div>
+                    <div class="modal__footer"><button class="for-close"><span>Понятно</span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="develop">
+        <div class="container">
+            <div class="develop__info">
+                <div class="develop__title"><h1>Разрабатывали для себя</h1></div>
+                <div class="develop__check"><i class="fas fa-check"></i><p>2,5 года делаем автоматизированные ставки</p></div>
+                <div class="develop__check"><i class="fas fa-check"></i><p>15000 ставок ежедневно</p></div>
+                <p class="develop__paragraph_1">«Нас не устраивало качество других сканеров. Задержки, склейки или технические сбои. Мы разрабатывали сканер для себя и пользуемся им постоянно.» – Команда ODDSCP</p>
+                <p class="develop__paragraph_2">Сейчас API для парсинга событий готовы предоставить 500 клиентам, чтобы не привлекать внимание БК.</p>
+                <div class="info__btn">
+                    <button><span>Регистрация</span></button>
+                    <div class="info__text">
+                        <span>123/<span style="color: #656667;">500</span></span>
+                        <p>Активных клиентов</p>
+                    </div>
+                </div>
+                <p class="info__warning">*Продажа API ключа будет прекращена</p>
+            </div>
+        </div>
+    </section>
+    <section class="bet">
+        <div class="container">
+            <div class="bet__content">
+                <div class="bet__title"><h1>Доступные букмекеры</h1></div>
+                <div class="bet__regions">
+                    <div class="bet__region" style="box-shadow: 0 0 5px #fc8b2b, 0 0 10px #fc8b2b, 0 0 30px #fc8b2b;"><h3>Все</h3></div>
+                    <div class="bet__region"><h3>Россия</h3></div>
+                    <div class="bet__region"><h3>Мир</h3></div>
+                    <div class="bet__region"><h3>США</h3></div>
+                </div>
+                <div class="bet__companies">
+                    <div class="bet__row">
+                        <img src="images/fifth-block/1bk.png" alt="">
+                        <img src="images/fifth-block/2bk.png" alt="">
+                        <img src="images/fifth-block/3bk.png" alt="">
+                        <img src="images/fifth-block/4bk.png" alt="">
+                    </div>
+                    <div class="bet__row">
+                        <img src="images/fifth-block/5bk.png" alt="">
+                        <img src="images/fifth-block/6bk.png" alt="">
+                        <img src="images/fifth-block/7bk.png" alt="">
+                        <img src="images/fifth-block/8bk.png" alt="">
+                    </div>
+                </div>
+
+                <div class="bet__more"><button class="more__btn"><span>Показать еще</span></button></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other">
+        <div class="container">
+            <div class="other__title"><h1>Доступные виды спорта</h1></div>
+            <div class="other__sports">
+                <div class="other__sport">
+                    <img src="images/fifth-block/1i.png" alt="">
+                    <p>Футбол</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/2i.png" alt="">
+                    <p>Теннис</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/3i.png" alt="">
+                    <p>Волейбол</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/4i.png" alt="">
+                    <p>Пин Понг</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/5i.png" alt="">
+                    <p>Баскетбол</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/6i.png" alt="">
+                    <p>Хоккей</p>
+                </div>
+            </div>
+            <div class="other__sports">
+                <div class="other__sport">
+                    <img src="images/fifth-block/7i.png" alt="">
+                    <p>Бадминтон</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/8i.png" alt="">
+                    <p>Гандбол</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/9i.png" alt="">
+                    <p>Киберспорт</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/10i.png" alt="">
+                    <p>ММА</p>
+                </div>
+                <div class="other__sport">
+                    <img src="images/fifth-block/11i.png" alt="">
+                    <p>Футзал</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="container">
+            <div class="statistics__content">
+                <div class="statistics__title"><h1>Доступные рынки</h1></div>
+                <table class="statistics__table table">
+                    <tr style="text-align: center;">
+                        <td></td>
+                        <td class="table__category_2"><span>Победы</span></td>
+                        <td class="table__category"><span>Тоталы</span></td>
+                        <td class="table__category_2"><span>Форы</span></td>
+                        <td class="table__category"><span>Инд.Тоталы</span></td>
+                        <td class="table__category_2"><span>Угл.Победы</span></td>
+                        <td class="table__category"><span>Угл.Тоталы</span></td>
+                    </tr>
+                    <tr>
+                        <td class="table__category_3"><span>Матч</span></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__checked"><i class="fas fa-check"></i></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__checked"><i class="fas fa-check"></i></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__checked"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 10px;" class="table__category"><span>Сет/Тайм/Период</span></td>
+                        <td class="table__checked"><i class="fas fa-check"></i></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__checked"><i class="fas fa-check"></i></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__category"></td>
+                        <td class="table__category"></td>
+                    </tr>
+                    <tr>
+                        <td class="table__category_3"><span>Гейм</span></td>
+                        <td class="table__checked_2"><i class="fas fa-check"></i></td>
+                        <td class="table__category"></td>
+                        <td class="table__category"></td>
+                        <td class="table__category"></td>
+                        <td class="table__category"></td>
+                        <td class="table__category"></td>
+                    </tr>
+    
+    
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="integration" class="integration">
+        <div class="container">
+            <div class="integration__content">
+                <div class="integration__title"><h1>Простота внедрения</h1>
+                    <h3>Для интеграции достаточно всего абзаца кода</h3></div>
+                    <div class="integration__languages">
+                        <h4 style="color: #fc8b2b;">Html</h4>
+                        <h4>Python</h4>
+                        <h4 style="font-weight: bold;">C++</h4>
+                        <h4>Java</h4>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="integration__code">
+                        <span>int main()</span>
+                        <span>{</span>
+                        
+                        <span style="margin-left: 10px;">std::string user_name = «user»; //</span>
+                        <span style="margin-left: 10px;">std::cout << «Hello, « << user_name << «!» << std::endl;</span>
+        
+                        <span style="margin-left: 10px;">user_name = «The Great Whale»; //</span>    
+                        <span style="margin-left: 10px;">std::cout << «I am « << user_name;</span>
+                        <span style="margin-left: 10px;">return EXIT_SUCCESS; //</span>      
+                    </div>
+                    <div class="integration__info">
+                        <p>С интеграцией сможет справиться программист с опытом от 1 года</p>
+                        <p>Для интеграции разработана подробная<span><a href="#"> документация </a></span></p>
+                        <p>* В случае возникновения сложностей наша<span><a href="#"> тех. поддержка </a></span>поможет оперативно решить вопрос</p>
+                    </div>
+            </div>
+           
+        </div>
+
+    </section>
+    
+    <script src="js/three.r119.min.js"></script>
+    <script src="js/vanta.halo.min.js"></script>
+    <script>
+        VANTA.HALO({
+        el: "#integration",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 0.00,
+        minWidth: 0.00,
+        xOffset: 0.30
+        })
+        </script>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
